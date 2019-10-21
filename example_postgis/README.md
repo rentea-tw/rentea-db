@@ -60,6 +60,8 @@ root@ad29ec9346f3:/# sudo -u postgres psql -c "SELECT * FROM points WHERE ST_Dis
 
 - Show all records which are in a custom polygon.
 
+![image](https://raw.githubusercontent.com/rentea-tw/rentea-db/master/example_postgis/resources/picture_000.png)
+
 ```
 root@ad29ec9346f3:/# sudo -u postgres psql -c "SELECT * FROM points WHERE ST_Contains('SRID=4326;POLYGON((121.564205 25.035180, 121.565315 25.034793, 121.565277 25.033619, 121.564559 25.033099, 121.563510 25.034197, 121.564205 25.035180))', location);" postgres
 
