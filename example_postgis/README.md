@@ -14,7 +14,7 @@ Docker
 
 ```bash
 git clone https://github.com/rentea-tw/rentea-db.git
-cd example_postgis
+cd rentea-db/example_postgis
 sudo docker build . -o example:postgis
 ```
 
