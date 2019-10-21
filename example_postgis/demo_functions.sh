@@ -1,5 +1,8 @@
 #!bin/bash
 
+# Start service in the new container.
+sudo service postgresql start
+
 echo "Show two records '台科大' and '台北 101' in the table which created by us."
 sudo -u postgres psql -c "SELECT * FROM points;" postgres
 
